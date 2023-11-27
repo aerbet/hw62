@@ -1,0 +1,5 @@
+.header,
+.body_div,
+.footer {
+    grid-column-gap: 20px;
+}
