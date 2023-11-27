@@ -1,8 +1,10 @@
 import React from 'react';
-import '/App.css'
+import './App.css'
 import Catalog from "../components/elements/body_div/Catalog";
 import Advantage from "../components/elements/body_div/Advantage";
-import
+import MainBar from "../components/elements/body_div/MainBar";
+import LeftSideBar from "../components/elements/body_div/LeftSideBar";
+import Footer from "../components/elements/footer/Footer.tsx";
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 const routes = [
@@ -48,7 +50,7 @@ const routes = [
   },
   ];
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
