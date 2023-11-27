@@ -1,16 +1,19 @@
 import React from 'react';
-import './body_css/body_div.css';
+import Cpu from '../../../images/cpu.jpg';
+import Cooler from '../../../images/cooler.png';
+import Mother from '../../../images/mother.png';
 
+import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
 const MainBar: React.FC = () => {
   return (
     <div className='MainBar'>
-
-        <img alt='img'  />
-        <img alt='img'  />
-        <img alt='img' />
-
+      < Slider >
+        <img alt='img' src={Cpu}/>
+        <img alt='img' src={Cooler}/>
+        <img alt='img' src={Mother}/>
+      </Slider>
     </div>
   );
 };
